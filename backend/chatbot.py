@@ -19,9 +19,11 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_pinecone import PineconeVectorStore
 from langchain.embeddings import OpenAIEmbeddings
+from load_dotenv import load_dotenv
 from pinecone import Pinecone
 from openai import OpenAI
 from flask_cors import CORS
+
 import os
 import tiktoken
 
@@ -29,8 +31,10 @@ import tiktoken
 app = Flask(__name__)
 CORS(app) #Enable CORS for all routes
 
-PINECONE_API_KEY = ''
-OPENAI_API_KEY = ''
+load_dotenv()
+
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 os.environ['PINECONE_API_KEY'] = PINECONE_API_KEY
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
