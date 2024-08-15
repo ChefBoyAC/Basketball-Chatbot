@@ -29,8 +29,8 @@ import tiktoken
 app = Flask(__name__)
 CORS(app) #Enable CORS for all routes
 
-PINECONE_API_KEY = '595bd162-b190-4ecd-a8ff-421a0a27a2de'
-OPENAI_API_KEY = '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'
+PINECONE_API_KEY = ''
+OPENAI_API_KEY = ''
 
 os.environ['PINECONE_API_KEY'] = PINECONE_API_KEY
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
