@@ -33,11 +33,10 @@ CORS(app) #Enable CORS for all routes
 
 load_dotenv()
 
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+#Put API key here
+PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
-os.environ['PINECONE_API_KEY'] = PINECONE_API_KEY
-os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 
 def generate_stream(user_query):
     try:

@@ -1,4 +1,4 @@
-// File: /Users/aaronchanner/Desktop/MLC/basketball-chatbot/frontend/app/layout.js
+// File: /Users/aaronchanner/Desktop/chatbot/frontend/app/layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
